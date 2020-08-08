@@ -2,7 +2,6 @@ piVersion: v1
 kind: PersistentVolume
 metadata:
   name: smokeping-pv-config
-  namespace: smokeping
 spec:
   capacity:
     storage: 2Gi
