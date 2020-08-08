@@ -1,0 +1,23 @@
+piVersion: v1
+kind: PersistentVolume
+metadata:
+  name: smokeping-pv-config
+  namespace: smokeping
+spec:
+  capacity:
+    storage: 2Gi
+  volumeMode: Filesystem
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-config-storage
+  local:
+    path: /media/usb-cruzer/smokeping-config
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - node-1-k3s
