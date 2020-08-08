@@ -1,0 +1,14 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: smokeping-config
+  namespace: smokeping
+  labels:
+    k8s-app: smokeping
+spec:
+  storageClassName: local-config-storage
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
