@@ -7,6 +7,7 @@ Ref: [Linuxserver.io Dockerised Images] (https://hub.docker.com/r/linuxserver/sm
 
 ### Prerequisits:
 You have a running k8s or k3s cluster
+Ref: If you already got a Raspberry Pi going you can use the these [instructions to install k3s] (https://rancher.com/docs/k3s/latest/en/advanced/#enabling-legacy-iptables-on-raspbian-buster) AND (https://rancher.com/docs/rancher/v2.x/en/quick-start-guide/)
 
 ### Following changes may be required before you apply the yamls
 1. path to your storage. I am using attached media replace path: /media/usb-cruzer/smokeping-config with yours
