@@ -14,3 +14,4 @@ Ref: If you already got a Raspberry Pi going you can use the these [instructions
 2. size of your storage. I have given 2GB more than sufficient for a home configuration
 3. your workload node if you are using more than one node. Modify nodeAffinity
 4. your time zone - name: TZ value: "Australia/Melbourne"
+5. Service config you can use a nodeport or leave it default and expose via traefik ingress resource
